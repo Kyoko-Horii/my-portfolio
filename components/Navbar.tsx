@@ -41,7 +41,11 @@ export default function Navbar() {
             </a>
           ))}
           <a href="#contact" className="nav-cta" onClick={() => setMenuOpen(false)}>
-            Let&apos;s talk <span>↗</span>
+            Let&apos;s talk
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M7 17L17 7" />
+              <path d="M8 7h9v9" />
+            </svg>
           </a>
         </div>
       </nav>

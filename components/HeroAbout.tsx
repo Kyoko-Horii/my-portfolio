@@ -15,8 +15,26 @@ export default function HeroAbout() {
               I&apos;m an Information Technology graduate interested in web development, application development, and thoughtful user interface design. I enjoy turning ideas into useful digital experiences while learning something new with every project.
             </p>
             <div className="hero-actions">
-              <a href="#projects" className="button button-primary">Explore my work <span>↗</span></a>
-              <a href="#about" className="button button-secondary">More about me <span>↓</span></a>
+              <a href="#projects" className="button button-primary">
+                Explore my work
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7" />
+                  <path d="M8 7h9v9" />
+                </svg>
+              </a>
+              <a
+                href="/Jhelyn-P-Medina-Resume.pdf"
+                download="Jhelyn-P-Medina-Resume.pdf"
+                className="button button-secondary"
+                aria-label="Download my resume as a PDF"
+              >
+                Download Resume
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 3v12" />
+                  <path d="M6 11l6 6 6-6" />
+                  <path d="M5 21h14" />
+                </svg>
+              </a>
             </div>
             <div className="hero-meta">
               <div>
@@ -30,21 +48,9 @@ export default function HeroAbout() {
             </div>
           </div>
           <div className="hero-visual">
-            <div className="hero-visual-top"><span>-</span><span>-</span></div>
             <div className="profile-frame">
               <div className="profile-backdrop" />
               <img src="/profile.JPG" alt="Portrait of Jhelyn Medina" className="profile-image" />
-              <div className="profile-label">
-                <span className="profile-label-small"></span>
-                <span className="profile-label-name"></span>
-              </div>
-            </div>
-            <div className="hero-sticker">
-              <span className="sticker-star">!💤</span><span></span><span></span><span></span>
-            </div>
-            <div className="hero-visual-bottom">
-              <span>CREATIVE MINDSET</span>
-              <span>CONTINUOUS GROWTH ↗</span>
             </div>
           </div>
         </div>
@@ -70,7 +76,13 @@ export default function HeroAbout() {
             <div className="about-copy">
               <p>I&apos;m Jhelyn P. Medina, an Information Technology graduate who enjoys exploring the connection between technology, design, and everyday problems. I like working on projects that challenge me to think carefully about how something looks and how it works.</p>
               <p>My experience includes customer service and remote video annotation, alongside my academic and personal projects. These experiences have helped me develop communication, attention to detail, adaptability, and problem-solving skills.</p>
-              <a href="#contact" className="text-link">Let&apos;s connect <span>↗</span></a>
+              <a href="#contact" className="text-link">
+                Let&apos;s connect
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7" />
+                  <path d="M8 7h9v9" />
+                </svg>
+              </a>
             </div>
           </div>
           <div className="about-facts">
