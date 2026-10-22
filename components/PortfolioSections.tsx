@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 type PortfolioSectionsProps = {
   projects: any[];
   services: any[];
@@ -8,8 +10,6 @@ type PortfolioSectionsProps = {
   learning: any[];
 };
 
-/* ---------- ICON LIBRARY ---------- */
-
 type IconProps = { size?: number };
 
 const ArrowUpRight = ({ size = 16 }: IconProps) => (
@@ -19,7 +19,6 @@ const ArrowUpRight = ({ size = 16 }: IconProps) => (
   </svg>
 );
 
-/* Services */
 const IconCode = ({ size = 20 }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <polyline points="16 18 22 12 16 6" />
@@ -44,7 +43,6 @@ const IconDevice = ({ size = 20 }: IconProps) => (
   </svg>
 );
 
-/* Education */
 const IconGraduation = ({ size = 20 }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M22 10L12 5 2 10l10 5 10-5z" />
@@ -76,7 +74,6 @@ const IconSchool = ({ size = 20 }: IconProps) => (
   </svg>
 );
 
-/* Experience */
 const IconHeadset = ({ size = 20 }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
@@ -91,7 +88,6 @@ const IconVideo = ({ size = 20 }: IconProps) => (
   </svg>
 );
 
-/* Skills */
 const IconLayout = ({ size = 18 }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -136,7 +132,6 @@ const IconUsers = ({ size = 18 }: IconProps) => (
   </svg>
 );
 
-/* Technologies */
 const IconHtml = ({ size = 18 }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <polyline points="16 18 22 12 16 6" />
@@ -212,7 +207,6 @@ const IconFigma = ({ size = 18 }: IconProps) => (
   </svg>
 );
 
-/* Learning */
 const IconResponsive = ({ size = 18 }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -234,7 +228,6 @@ const IconUser = ({ size = 18 }: IconProps) => (
   </svg>
 );
 
-/* Icon dispatcher */
 function renderIcon(name: string, size = 20) {
   const map: Record<string, (p: IconProps) => JSX.Element> = {
     code: IconCode,
