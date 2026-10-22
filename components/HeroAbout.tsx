@@ -33,7 +33,7 @@ export default function HeroAbout() {
             <div className="hero-visual-top"><span>-</span><span>-</span></div>
             <div className="profile-frame">
               <div className="profile-backdrop" />
-              <img src="/profile.jpg" alt="Portrait of Jhelyn Medina" className="profile-image" />
+              <img src="/profile.JPG" alt="Portrait of Jhelyn Medina" className="profile-image" />
               <div className="profile-label">
                 <span className="profile-label-small"></span>
                 <span className="profile-label-name"></span>
