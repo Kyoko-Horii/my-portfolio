@@ -23,8 +23,8 @@ export default function HeroAbout() {
                 </svg>
               </a>
               <a
-                href="/Jhelyn-P-Medina-Resume.pdf"
-                download="Jhelyn-P-Medina-Resume.pdf"
+                href="/jhelyn-medina-resume.pdf"
+                download="jhelyn-medina-resume.pdf"
                 className="button button-secondary"
                 aria-label="Download my resume as a PDF"
               >
