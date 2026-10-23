@@ -228,6 +228,21 @@ const IconUser = ({ size = 18 }: IconProps) => (
   </svg>
 );
 
+// Added new icons for the map and cart
+const IconMapPin = ({ size = 18 }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+  </svg>
+);
+
+const IconCart = ({ size = 18 }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="9" cy="21" r="1" />
+    <circle cx="20" cy="21" r="1" />
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+  </svg>
+);
+
 function renderIcon(name: string, size = 20) {
   const map: Record<string, (p: IconProps) => JSX.Element> = {
     code: IconCode,
@@ -258,6 +273,8 @@ function renderIcon(name: string, size = 20) {
     responsive: IconResponsive,
     sparkles: IconSparkles,
     user: IconUser,
+    map: IconMapPin,
+    cart: IconCart,
   };
   const Cmp = map[name] || IconCode;
   return <Cmp size={size} />;
@@ -322,6 +339,61 @@ export default function PortfolioSections({ projects, services, education, exper
                       <div className="portfolio-mini-footer"><span>DESIGN</span><span>DEVELOPMENT</span></div>
                     </div>
                   )}
+
+                  {/* ADDED: Memorial Park Mockup */}
+                  {project.visual === "memorial" && (
+                    <div className="memorial-mockup">
+                      <div className="memorial-map">
+                        <div className="memorial-pin">
+                          <div className="memorial-pin-label">Lawn A-12</div>
+                          <IconMapPin size={20} />
+                        </div>
+                      </div>
+                      <div className="memorial-sidebar">
+                        <div>
+                          <div className="memorial-sidebar-label">Reservation</div>
+                          <div className="memorial-sidebar-title">Lawn A-12</div>
+                          <div className="memorial-lines"></div>
+                          <div className="memorial-lines short"></div>
+                        </div>
+                        <button className="memorial-btn">Pay with PayMaya</button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* ADDED: Sari-Sari Store Mockup */}
+                  {project.visual === "grocery" && (
+                    <div className="grocery-mockup">
+                      <div className="grocery-nav">
+                        <div className="grocery-brand">Jaliyah&apos;s Sari-sari Store</div>
+                        <div className="grocery-cart">
+                          <div className="grocery-cart-icon"><IconCart size={12} /></div>
+                          <div className="grocery-cart-badge">3</div>
+                        </div>
+                      </div>
+                      <div className="grocery-grid">
+                        <div className="grocery-item">
+                          <div className="grocery-item-img"></div>
+                          <div className="grocery-item-name">Lucky Me</div>
+                          <div className="grocery-item-price">₱ 12.00</div>
+                          <button className="grocery-btn">Add to Cart</button>
+                        </div>
+                        <div className="grocery-item">
+                          <div className="grocery-item-img"></div>
+                          <div className="grocery-item-name">Coke 1.5L</div>
+                          <div className="grocery-item-price">₱ 75.00</div>
+                          <button className="grocery-btn">Add to Cart</button>
+                        </div>
+                        <div className="grocery-item">
+                          <div className="grocery-item-img"></div>
+                          <div className="grocery-item-name">Piattos</div>
+                          <div className="grocery-item-price">₱ 18.00</div>
+                          <button className="grocery-btn">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
                   <span className="project-preview-index">{project.number}</span>
                 </div>
                 <div className="project-info">

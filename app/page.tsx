@@ -5,9 +5,11 @@ import PortfolioSections from "@/components/PortfolioSections";
 import Contact from "@/components/Contact";
 
 export const projects = [
-  { number: "01", category: "ANDROID APPLICATION", title: "Gym Management System", description: "A gym management application focused on organizing member information, instructor details, bookings, and announcements.", technologies: ["Kotlin", "PHP", "MySQL", "XML"], visual: "gym", note: "Application Development" },
+  { number: "01", category: "ANDROID APPLICATION", title: "Gym Management System", description: "A lightweight gym management system for MB Gym in Himamaylan City, Negros Occidental, designed to organize member profiles and membership tracking, instructor details and schedules, class and trainer bookings, and gym announcements—built simple and mobile-friendly for a small local gym.", technologies: ["Kotlin", "PHP", "MySQL", "XML"], visual: "gym", note: "Application Development" },
   { number: "02", category: "WEB DESIGN", title: "Responsive Website Design", description: "A website design project focused on clear content hierarchy, organized layouts, responsive sections, and a consistent visual identity.", technologies: ["Figma", "UI Design", "Wireframes", "CSS"], visual: "website", note: "UI / UX Design" },
   { number: "03", category: "PERSONAL WEBSITE", title: "Personal Portfolio", description: "A personal portfolio designed to introduce my background, showcase selected projects, and make it easy to get in touch.", technologies: ["Next.js", "React", "TypeScript", "CSS"], visual: "portfolio", note: "Web Development" },
+  { number: "04", category: "WEB SYSTEM", title: "Memorial Park Lawn Reservation System", description: "A management system for Angels Memorial Park in Kabankalan City, Negros Occidental, replacing their paper-based process with online lawn reservations, Google Map lawn locating, PayMaya API payments, and separate user and admin interfaces.", technologies: ["Google Maps API", "PayMaya API", "Database", "Admin Dashboard", "Responsive UI"], visual: "memorial", note: "Client System · Digital Transformation" },
+{ number: "05", category: "WEB APP", title: "Sari-Sari Store Online Grocery", description: "A personal mock online grocery web app inspired by our family sari-sari store, letting users browse items, add products to a cart, and simulate a checkout flow to practice e-commerce UI and cart logic.", technologies: ["HTML", "CSS", "JavaScript", "Cart Logic", "UI Design"], visual: "grocery", note: "Personal Project · E-Commerce UI" },
 ];
 
 export const services = [

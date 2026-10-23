@@ -36,16 +36,6 @@ export default function HeroAbout() {
                 </svg>
               </a>
             </div>
-            <div className="hero-meta">
-              <div>
-                <span className="hero-meta-label">FOCUS</span>
-                <span className="hero-meta-value">Development &amp; Design</span>
-              </div>
-              <div>
-                <span className="hero-meta-label">APPROACH</span>
-                <span className="hero-meta-value">Curious by nature</span>
-              </div>
-            </div>
           </div>
           <div className="hero-visual">
             <div className="profile-frame">
@@ -74,7 +64,7 @@ export default function HeroAbout() {
               <p>I believe good digital work starts with curiosity, thoughtful planning, and a willingness to keep learning.</p>
             </div>
             <div className="about-copy">
-              <p>I&apos;m Jhelyn P. Medina, an Information Technology graduate who enjoys exploring the connection between technology, design, and everyday problems. I like working on projects that challenge me to think carefully about how something looks and how it works.</p>
+              <p>I&apos;m Jhelyn P. Medina, an Information Technology graduate from Carlos Hilado Memorial State University, who enjoys exploring the connection between technology, design, and everyday problems. I like working on projects that challenge me to think carefully about how something looks and how it works.</p>
               <p>My experience includes customer service and remote video annotation, alongside my academic and personal projects. These experiences have helped me develop communication, attention to detail, adaptability, and problem-solving skills.</p>
               <a href="#contact" className="text-link">
                 Let&apos;s connect
